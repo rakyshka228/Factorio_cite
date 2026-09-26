@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Схема красных колбачек</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/icon.png">
+</head>
+<body>
+  <header>
+    <h1>
+      Чертёж:
+    </h1>
+    <a href="../Sait Factorio.html" class="back-btn">⬅ Назад на главную</a>
+  </header>
+
+  <main class="blueprint-page">
+    <img src="../images/bp1.png" alt="Чертёж">
+    <h2>Описание:</h2>
+    <p>ну блин, ну в названии всё сказано вроде :/</p>
+
+    <h2>Код чертежа:</h2>
+    <textarea id="bpCode" readonly>
+0eNq1ml2O2zYQx6+y0LMUiJ8ifZVgEcg2sStEllxJbrpYGGgfij60h0mLAkUbpGeQb1RSju1N15PlDFZPpin555kh/zMUqcdkWe/ctquaIVk8JmvXr7pqO1RtkyyS8fP48fDL+HH8dPht/Hz4dfz7ZvzLf/1j/Hf882b85/Cjv/5TuHL42X/1vZ/G35M0qVZt0yeLt49JX901ZR3ITblxHlnuhnZTBn7WryrXrFy2LVfvk73/VbN2PyQLtr9NE9cM1VC5I2T68vCu2W2WrvM3pCfY0JVNv227IVu6evB/vG376mj7Y+JR4o1Kk4dkkbH8jdrv02cofkaVfe82y7pq7rJNubqvGpex58AsPxGNB6ZJ51bV9ltunW55992urP0/+1ubttv4kFyxRpytqVtvx33pA7LOqqZ33eCvP7OGfW3MuvL/dbzM+BW8PON7b0Cdudrf3lWrbNvW7ht0ez12Cj8MAEnjSeY6qUBGUIERlFfoBhdA9YLbFjn5ijnnHsvP1kRMOB0TLsYwyCIKyaOnCn9q6zWUwKMKACXxExhCEVQFORgvK/mSVQUeBVllIiaFAifF1cTGLIapo5g8J5cGNYM8OSMmbwkUPk6tNSoufAR1QaZKPEoBKIK6IBShaEEOFsS6AvEMtQqqmBzMLT4ZAEEUOR4FOC0YtZrOIVdBX1jyOcwhryx5lNoFdWkpgMFUeMlzAKXxKMiqAi95CGXwKMhBS1U7j1G7JEgUcFoyPApwWnJiyoRME9TsMYdcpcQsnPOoYVQYJItCEpQFPIbLAo9iAIqgLAhl8SjAQUVQEWCVIqgIsopj1s0sqhQogWHmcUxJrab5DOpUilbsoPHUxNocGTu8tCBDDZoEzTu8sACSztEkwDvNaBUFwnFiVY7K5lqgcwAUQIkmQR4rYgmdQ6NaUzOGmMOagihxESVxbWgJCVhbaYvWObCqKnI0CbCpwO/5QySOJkHeCaLERYzEC7wwIY8VmgR5rGk5EjKsIGaMOTRaGMQCOWqfpLAIoow6f8DrCdh4MQxNAvZdDF5PEEmgSZB3eO1ANuG1A9mkEetiGZX3TYFAxm3bGkOtm3oGTRpLrJtxW/w2p9VN4JDE4jUFkfCnXMBpi8VrCiJJYrWLOiq0eJ1BduJPvaBRIG7LQzhDrHZzKMvi13jAITbL8UXJQCj81gaI4mgU6GDMjkZ2fniO2yZheXyNygTIvnpGniM3KC6251AIyI9T7H9Pd1Xn5+2dK7vsw71zNfYdhQKxpIoeCeLjExwtvLgY8FDNGF5doF1R72Mo3FxjeJ3B9uF3NeC4SeJ2DmgcdXvjdRXAYpaRFjmGyEJnX4xV/E4hy5FqZZaQN4HnWcZzVGqPOwxlnBFM5JCJ5JNkJl5z4nGBSb2xkbqodOeXk91d1/rPl/Lb0a/hYfKq3Q3b3XDdZPwpMjwMGmGpRFuKeZJjPO5NOYPPpqD31FcVX3cOihyT/OLCJBghV0H5RHACDAq6EIQ0IiGYJFg2wW7T5IOPYXgT+61MVWpSdZtOLT9rT02PD00Tetm5KfnUDD2nm6f2l7untlLHdvHk/tDWR0y49dQ/tZ/26y+28Atnahd6aoeu0/3Htrm07dGecPl0/9S2+bFtnvSbS3/oOv02dH3VDkvJ6UtwICxBwpewHL9cmj4v18JnGgqwuvVxrga38QN0eSE/TerSD5Lv69z6ZtW29c3Si+595a9877p+GjSluZXWKsWVFpzt9/8BdvuYZw==
+    </textarea>
+    <br>
+    <button id="copyBtn" onclick="copyCode()">Скопировать код</button>
+
+    <script>
+function copyCode() {
+  let code = document.getElementById("bpCode");
+  code.select();
+  code.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  let btn = document.getElementById("copyBtn");
+  btn.innerHTML = "&#10004;";
+
+  btn.classList.remove("copied");
+  void btn.offsetWidth;
+  btn.classList.add("copied");
+
+  setTimeout(() => {
+    btn.innerHTML = "Скопировать код";
+    btn.classList.remove("copied");
+  }, 1200);
+}
+</script>
+  </main>
+
+  <footer>
+    <p>© 2025 Мой сайт с чертежами</p>
+  </footer>
+</body>
+</html>

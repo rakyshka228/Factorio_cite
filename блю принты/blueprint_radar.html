@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чертёж — Factorio</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/icon.png">
+</head>
+<body>
+  <header>
+    <h1>Чертёж: </h1>
+    <a href="../Sait Factorio.html" class="back-btn">⬅ Назад на главную</a>
+  </header>
+
+  <main class="blueprint-page">
+    <img src="../images/radar.png" alt="Чертёж">
+    <h2>Описание: </h2>
+    <p>ну тип этот радар можно ставить куда угодно и будет 24/7 работать.</p>
+
+    <h2>Код чертежа: </h2>
+    <textarea id="bpCode" readonly>
+0eNqd1N1qwyAUAOBXKV6bEjXm71VKGTaRIRgTTLKthEB3N9jL9GK72eiewbzRbEfbjdk27WXE83mOnpwOLGTLKy1UA9IO5LzOtKgaUSqQgmFl1ubNrIfVxGzMejI8my/zaTbD6/BiPsw7gEBkpapBOutALe4Vk1tEsYLbaM1ypkFv96icP4EU9XMIuGpEI/hPyO5jeafaYsG13QD3oXUpmfYqpri0Z1RlLX4y6oB1PITplEKwtBEIh1Pa9/CfhW+xErdFDhbLsrZoJWtK7bTIXopdTjDaQWcdenAKnou28LjkWaNF5lWl5O7EDkUS311keHVyxHc50diLJ+iYE3bnFI9+xPiilcC/fXm+FU4pyB+dEr6MjW54lFzG8NgHJP6eckPk+vaKjukFJ9ILbvghCT2B0etrjZzQ+K6Pz0PRLeXF2/LsUHwUejcRZxRSaO+fzu2iaHhhueN4hkCyhUV/z2W7+MB1vTuAhjgJkoRSTEOCUd9/Awwx6vo=
+    </textarea>
+    <br>
+    <button id="copyBtn" onclick="copyCode()">Скопировать код</button>
+
+    <script>
+function copyCode() {
+  let code = document.getElementById("bpCode");
+  code.select();
+  code.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  let btn = document.getElementById("copyBtn");
+  btn.innerHTML = "&#10004;";
+
+  btn.classList.remove("copied");
+  void btn.offsetWidth;
+  btn.classList.add("copied");
+
+  setTimeout(() => {
+    btn.innerHTML = "Скопировать код";
+    btn.classList.remove("copied");
+  }, 1200);
+}
+</script>
+  </main>
+
+  <footer>
+    <p>© 2025 Мой сайт с чертежами</p>
+  </footer>
+</body>
+</html>

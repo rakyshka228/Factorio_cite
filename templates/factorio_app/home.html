@@ -1,0 +1,28 @@
+{% extends 'factorio_app/base.html' %}
+{% block title %}Чертежи Factorio{% endblock %}
+{% block content %}
+<main class="home-page">
+  <section class="catalog-intro">
+    <p class="eyebrow">ОБЩЕСТВЕННАЯ БИБЛИОТЕКА</p>
+    <h1>Строй быстрее.<br><em>Делись умнее.</em></h1>
+    <p class="intro-copy">Рабочие чертежи от игроков Factorio. Сохраняйте идеи, оставляйте отзывы и находите авторов, чей стиль вам подходит.</p>
+    {% if not user.is_authenticated %}<a class="primary-btn" href="{% url 'register' %}">Присоединиться к сообществу</a>{% endif %}
+  </section>
+  <form class="catalog-tools" method="get">
+    <input type="search" name="q" value="{{ query }}" placeholder="Поиск по названию и описанию">
+    <select name="tag" onchange="this.form.submit()"><option value="">Все теги</option>{% for tag in tags %}<option value="{{ tag.slug }}" {% if selected_tag == tag.slug %}selected{% endif %}>#{{ tag.name }}</option>{% endfor %}</select>
+    <button class="primary-btn" type="submit">Найти</button>
+  </form>
+  <section class="section-heading"><div><p class="eyebrow">ОТ СООБЩЕСТВА</p><h2>Свежие публикации</h2></div></section>
+  <section class="gallery">
+    {% for blueprint in user_blueprints %}
+      <article class="card community-card">
+        <a href="{% url 'user_blueprint_detail' blueprint.pk %}">{% if blueprint.image %}<img src="{{ blueprint.image.url }}" alt="{{ blueprint.title }}">{% else %}<div class="image-placeholder">NO PREVIEW</div>{% endif %}</a>
+        <div class="card-body"><h3><a href="{% url 'user_blueprint_detail' blueprint.pk %}">{{ blueprint.title }}</a></h3><p>{{ blueprint.description|truncatechars:110 }}</p><div class="card-meta"><a href="{% url 'profile' blueprint.author.username %}">@{{ blueprint.author.username }}</a><span>♥ {{ blueprint.like_count }}</span></div><div class="tag-row">{% for tag in blueprint.tags.all %}<span>#{{ tag.name }}</span>{% endfor %}</div></div>
+      </article>
+    {% empty %}<p class="empty-state">Пока нет публикаций. Станьте первым автором.</p>{% endfor %}
+  </section>
+  <section class="section-heading"><div><p class="eyebrow">АРХИВ</p><h2>Базовые чертежи</h2></div></section>
+  <section class="gallery legacy-gallery">{% for blueprint in blueprints %}<article class="card"><a href="{% url 'blueprint_detail' blueprint.slug %}"><img src="{{ blueprint.preview }}" alt="{{ blueprint.title }}"><div class="card-body"><h3>{{ blueprint.title }}</h3><p>{{ blueprint.description }}</p><span class="tag-row">{% if blueprint.science %}#наука{% else %}#производство{% endif %}</span></div></a></article>{% endfor %}</section>
+</main>
+{% endblock %}

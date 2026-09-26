@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Попутно-нефтяной газ</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/icon.png">
+</head>
+<body>
+  <header>
+    <h1>
+      Чертёж:
+    </h1>
+    <a href="../Sait Factorio.html" class="back-btn">⬅ Назад на главную</a>
+  </header>
+
+  <main class="blueprint-page">
+    <img src="../images/gaz.png" alt="Чертёж">
+    <h2>Описание:</h2>
+    <p>._.</p>
+
+    <h2>Код чертежа:</h2>
+    <textarea id="bpCode" readonly>
+0eNrtmdtuozAQht/F11DhI5BXqaKKJG7WKhjWQLdVlXdfJ2lJqnrKmNxtV9qLpDjfjH/PjGfYN7KpR905YweyeiNm29qerO7fSG/2tqqPfxteO01WxOmt8R8SYqvm+H1T9WabtqZOO9dudd8buyeHhBi70y9kRQ/rhGg7mMHoM/H05fXBjs1GO79gInVnbtf2fnFrjzY9gBfsTibklawYvZOHQ/KFwCZCP7Su2ut0qOxTiEQ/SNyTErIzfjPnBSLA5RP3uDunH43V7jXElSCXeufeFQOk+nj+8Husam/er7Ota7zmXsNBN2fRzO5o7EMo1+5Gb+DZL08b/7nWJ8XPq/1i+2Dss99N6909/fryTSRepWr7RFbZccvBJxR8wg7rg//3VSsxe4rFh0YsfIryEyEd2nTv2tHuvmXxMEtdRYTWdbr9pfshAMqngMjDoPwS5mP9lBrbazf4BwFUdo2aja1iAuuXzvlQSAdX2b5r3ZBudB10loMWKAuYKCcTj1U/fOs7i/KdZgucF3HOU7rAhoy0wRbYyCNt8AU2VKQNEV8AVTje6SULG70zY5Pq2tt2vmx1ba2/jZ0SQKpbVC4AaH4LFPL0kpS+YDRmW/lCXVc2BCuya9jnlLmq+H1bm136OPoa9OjaJu304LyOXtd91f8jpZ+W+BscUJ5leAQQEYzG39ZF6LZujHOtBw5u1D/j7mZsydX7RbwihOb4vgCKjavqNm78Xk6//goqs3e/gpCr7mJsumArcPo5p6iSy9Tcvqa6yKGu9ZYSBkKLW6AZAI3oJIprB+c77GwBOUOR8WMFpCVneASgHMeHP+gFvrMGvZDY/qDM4kRWaDCf8zHHJxQwQPACjwDmBl5Gtz/FjFciW9BUnGA/uqkQEfkLHKaIyF/o8OJfAfCf+wpALGgjwMOT+LIHHZ6K8KcEMy94/4sc208IHC+idglgu+Xi0Y1L4JVMhldwejuB3LGcTfC8nNmxjOhbL3VaYG42yfHeQeLFT+Un1Lxv6F5W4U4iIk8uIYNk5xFsBbKDMsynTH4NDCFKPAJ4QagyfKAAXiiK9wKYkRTDI4D5WfH4cIVQIv7W/D+Kn6WLuPagWFBLrmHUNK9ydJgJoM9X+KwVwESkygVlX+Dm+hz/IgraYU4j9M9B90IlL2fo6AC9w0+kZ/3XCfnjvTqmzz2ViUx8nyHXyb0fld4/r88pc0zM6b8QE/KsXX+iSsVKUZZSMqk4o4fDX3PINuY=
+    </textarea>
+    <br>
+    <button id="copyBtn" onclick="copyCode()">Скопировать код</button>
+
+    <script>
+function copyCode() {
+  let code = document.getElementById("bpCode");
+  code.select();
+  code.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  let btn = document.getElementById("copyBtn");
+  btn.innerHTML = "&#10004;";
+
+  btn.classList.remove("copied");
+  void btn.offsetWidth;
+  btn.classList.add("copied");
+
+  setTimeout(() => {
+    btn.innerHTML = "Скопировать код";
+    btn.classList.remove("copied");
+  }, 1200);
+}
+</script>
+  </main>
+
+  <footer>
+    <p>© 2025 Мой сайт с чертежами</p>
+  </footer>
+</body>
+</html>

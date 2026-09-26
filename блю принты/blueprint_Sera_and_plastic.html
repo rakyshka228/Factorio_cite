@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Схема производства серы и пластика</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/icon.png">
+</head>
+<body>
+  <header>
+    <h1>
+      Чертёж:
+    </h1>
+    <a href="../Sait Factorio.html" class="back-btn">⬅ Назад на главную</a>
+  </header>
+
+  <main class="blueprint-page">
+    <img src="../images/Plastic and sera .png" alt="Чертёж">
+    <h2>Описание:</h2>
+    <p>Схема производства серы и пластика на 1 конвеер, полездно для голубых колб</p>
+
+    <h2>Код чертежа:</h2>
+    <textarea id="bpCode" readonly>
+0eNq1mdtu2zAMht9F13Zhne0Ae5KiKJxE7QT4NNnuVhR59ykp2jSLONNEemnH/kxK5B+SemPbZnZD8N3ENm/M7/puZJv7Nzb6565ujve6unVsw4amHie/y7d1YIeM+W7v/rANP2SJZ8e5eZq/PiYODxlz3eQn7975p4vXx25uty5ETvb5HT+4fOrz59DP3Z5lbOjH+FrfHfkRVco7nbFXtsm1utPxE3sf3O79gfJozT9kgSdbmMxFAi0v0AmguQAmCAptXKVh41SCrBdsqxZtM0venTdCpAkWT5BpQrlE0EuECr/9eskfXuA3HDCHnwN999O1flc3ecysmH3XsPLCnn/CMWPx4mjEZ7Z93Hn8NddN/Gb8petDGxMzZYdA21Ep2A71xYyvArHOFomPVWhnFB4B7YzGR2sBIFakDAcQFh+v6gK2LFd8RTZBHpLSiaN0usCjDYxOaaHg+LwFHBfnfHmKYZ5Poe7GoQ9TvnVNKmn4BXHZe0nm41ZXXfJ9N7owuZAgF7DlybASmoDGRawwaLRYGRKWQC5Q5BIvRYAIiAqPAOJVFmgpUiWA4HhEBSAEQc1O9iCKL0mQomt2KlmkoqChNdAEXbu2MxVq0hCKiZOdty0mpKWKF3I/SjK/QvHP+da6vZ/b3DXx+RCLmaFv3P80Adp1VRDqq2trb1JfKY6WE9AdgUcAcqIkXk4MgFB4hAUQGl0DgQhDUQfIJYsuTUB7SooKmJurgKrIWWowWaoLMt+i+JySsuZbUlavyDcgLDS+q4KCU6/IN2CIoPFdldIAwlCKCI0qIrTFywHkYUmRA42KyIpSOmhM6WDwowzIccPJ+Yga3Blyy4VbXSPX9y0KNxg0hG4LGbFGr29ckCFBaLYUahZpLF6KABEw+K4KjNcKL0XAjMiu6KqgmehiV6UWEQIvWhACP7oGEYpSdsiblx1Wk2VCYGTCGjJfoviW3nxAYVpSKhn5LZWMrQgnOwoYjJRf8q8eR//i8iH0L37vQh49HVOxV11AM3b0YJNS1pITRJsnFu3JN/G192Ouj/OvLHWMlrGrFczYrm+HOtRTH01iP9jx4Gwe3eMndAqzS1lP/7dEDShL8oBSJQaU0anf8fq4Rvex+9ZZzAL9EO/6ybXxE+dDyYy9RLdPr2kjKlVVWgttpOCHw18VNzN1
+    </textarea>
+    <br>
+    <button id="copyBtn" onclick="copyCode()">Скопировать код</button>
+
+    <script>
+function copyCode() {
+  let code = document.getElementById("bpCode");
+  code.select();
+  code.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+
+  let btn = document.getElementById("copyBtn");
+  btn.innerHTML = "&#10004;";
+
+  btn.classList.remove("copied");
+  void btn.offsetWidth;
+  btn.classList.add("copied");
+
+  setTimeout(() => {
+    btn.innerHTML = "Скопировать код";
+    btn.classList.remove("copied");
+  }, 1200);
+}
+</script>
+  </main>
+
+  <footer>
+    <p>© 2025 Мой сайт с чертежами</p>
+  </footer>
+</body>
+</html>

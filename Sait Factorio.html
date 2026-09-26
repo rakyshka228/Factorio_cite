@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorio Чертежи</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+  <header>
+    <h1 style="margin-left: 30px;">Чертежи для Factorio</h1>
+  </header>
+
+  <button class="filter-toggle button-ripple" onclick="openFilterPanel()">☰ Фильтры</button>
+
+  <aside id="filterSidebar" class="filter-sidebar">
+    <button class="close-btn button-ripple" onclick="closeFilterPanel()">×</button>
+    <div class="filters">
+      <button onclick="filterCards('all')" class="button-ripple active">Показать все</button>
+      <input type="text" id="searchInput" placeholder="Поиск по названию или описанию..." oninput="searchCards()">
+      <button onclick="filterCards('science')" class="button-ripple">Исследовательские пакеты</button>
+    </div>
+  </aside>
+  <div id="filterOverlay" onclick="closeFilterPanel()"></div>
+
+  <main class="gallery">
+    <div class="card science">
+      <a href="блю принты/blueprint_red.html">
+        <img src="pokaz/red_pokaz.png" alt="Чертёж 1">
+        <h2>Схема красной науки</h2>
+        <p>Самая базовая схема красных колб</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="блю принты/blueprint_radar.html">
+        <img src="pokaz/radar_pokaz.png" alt="Чертёж 2">
+        <h2>Радар</h2>
+        <p>Радар, который работает от солнечной энергии.</p>
+      </a>
+    </div>
+
+    <div class="card science">
+      <a href="блю принты/blueprint_green.html">
+        <img src="pokaz/green_pokaz.png" alt="Чертёж 3">
+        <h2>Схема зелёной науки</h2>
+        <p>Самая базовая схема зеленых колб</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="блю принты/blueprint_Uran.html">
+        <img src="pokaz/Uran_ponaz.png" alt="Чертёж 4">
+        <h2>Уран</h2>
+        <p>Моя схема добычи и переработки урана</p>
+      </a>
+    </div>
+    <div class="card science">
+      <a href="блю принты/blueprint_Black.html">
+        <img src="pokaz/Black_pokaz.png" alt="Чертёж 5">
+        <h2>Схема черной науки</h2>
+        <p>Схема для черных колб.</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="блю принты/blueprint_gaz.html">
+        <img src="pokaz/gaz_pokaz.png" alt="Чертёж 6">
+        <h2>Попутно-нефтяной газ</h2>
+        <p>Модульная схема производства попутно-нефтяного газа и твердого топлива.</p>
+      </a>
+    </div>
+
+    <div class="card science">
+      <a href="блю принты/blueprint_Blue.html">
+        <img src="pokaz/Blue_Pokaz.png" alt="Чертёж 7">
+        <h2>Голубая наука</h2>
+        <p>Схема производства голубых колб.</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="блю принты/blueprint_Sera_and_plastic.html">
+        <img src="pokaz/Plastic and sera pokaz.png" alt="Чертёж 8">
+        <h2>Производство серы и пластика</h2>
+        <p>Схема для производства серы и пластика.</p>
+      </a>
+    </div>
+
+    <div class="card science">
+      <a href="блю принты/blueprint_purple.html">
+        <img src="pokaz/purple_pokaz.png" alt="Чертёж 9">
+        <h2>Фиолетовые колбы</h2>
+        <p>Схема для производства фиолетовой науки.</p>
+      </a>
+    </div>
+
+    <div class="card science">
+      <a href="блю принты/blueprint_yellow.html">
+        <img src="pokaz/yellow_pokaz.png" alt="Чертёж 10">
+        <h2>жёлтые колбы</h2>
+        <p>Схема для производства жёлтой науки.</p>
+      </a>
+    </div>
+
+    <div class="card science">
+      <a href="блю принты/blueprint_white.html">
+        <img src="pokaz/white_pokaz.png" alt="Чертёж 11">
+        <h2>белые колбы</h2>
+        <p>Схема для производства белой науки.</p>
+      </a>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Мой сайт с чертежами</p>
+  </footer>
+
+  <script>
+let currentFilter = 'all';
+
+function filterCards(type) {
+  currentFilter = type;
+  document.querySelectorAll('.filters button').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.filters button').forEach(btn => {
+    if (btn.textContent === (type === 'all' ? 'Показать все' : 'Исследовательские пакеты')) {
+      btn.classList.add('active');
+    }
+  });
+  searchCards();
+}
+
+function searchCards() {
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  document.querySelectorAll('.card').forEach(card => {
+    const matchesFilter = currentFilter === 'all' || card.classList.contains(currentFilter);
+    const text = card.innerText.toLowerCase();
+    const matchesSearch = text.includes(search);
+    card.style.display = (matchesFilter && matchesSearch) ? '' : 'none';
+  });
+}
+
+function openFilterPanel() {
+  document.getElementById('filterSidebar').classList.add('open');
+  document.querySelector('.filter-toggle').classList.add('hide');
+  document.getElementById('filterOverlay').classList.add('show');
+}
+function closeFilterPanel() {
+  document.getElementById('filterSidebar').classList.remove('open');
+  document.querySelector('.filter-toggle').classList.remove('hide');
+  document.getElementById('filterOverlay').classList.remove('show');
+}
+document.querySelectorAll('.button-ripple').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const ripple = document.createElement('span');
+    ripple.className = 'ripple';
+    const rect = btn.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+    ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+    btn.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+  });
+});
+  </script>
+</body>
+</html>

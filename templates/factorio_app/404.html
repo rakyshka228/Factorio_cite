@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Чертёж не найден</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Чертёж не найден</h1>
+  </header>
+  <main class="blueprint-page">
+    <p>Такого чертежа нет в базе сайта.</p>
+    <a href="{% url 'home' %}" class="back-btn">⬅ На главную</a>
+  </main>
+</body>
+</html>

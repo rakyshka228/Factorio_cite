@@ -1,0 +1,17 @@
+{% extends 'factorio_app/base.html' %}
+{% block title %}{{ blueprint.title }} · архив{% endblock %}
+{% block content %}
+<main class="detail-page">
+  <a class="back-link" href="{% url 'home' %}">← Все чертежи</a>
+  <div class="detail-grid">
+    <section><div class="detail-image"><img src="{{ blueprint.image }}" alt="{{ blueprint.title }}"></div></section>
+    <section class="detail-copy"><p class="eyebrow">АРХИВ FACTORIO BLUEPRINT HUB</p><h1>{{ blueprint.title }}</h1><p class="author-line">Базовый чертёж каталога</p><p>{{ blueprint.description }}</p><div class="tag-row"><span>{% if blueprint.science %}#наука{% else %}#производство{% endif %}</span><span>#архив</span></div><h2>Код чертежа</h2><textarea id="bpCode" readonly>{{ blueprint.code }}</textarea><button class="copy-btn" id="copyBtn" onclick="copyCode()">Скопировать код</button></section>
+  </div>
+</main>
+<script>
+  function copyCode() {
+    navigator.clipboard.writeText(document.getElementById('bpCode').value);
+    document.getElementById('copyBtn').textContent = 'Скопировано';
+  }
+</script>
+{% endblock %}
