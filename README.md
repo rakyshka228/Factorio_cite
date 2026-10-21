@@ -11,7 +11,7 @@ The platform allows players to publish their setups, find ready-made solutions u
 
 ---
 
-## ➡️ Core Features
+## Core Features
 
 **Community Library**
 * Publish your own blueprints with screenshots, tags, and the blueprint string.
@@ -32,33 +32,38 @@ The platform allows players to publish their setups, find ready-made solutions u
 
 ---
 
-## ➡️ Screenshots
+## Screenshots
 
 <details>
 <summary> Homepage and Catalog </summary>
-<img width="960" height="465" alt="Screenshot 2026-09-27 180000" src="https://github.com" />
-<img width="960" height="493" alt="Screenshot 2026-09-27 180024" src="https://github.com" />
+<img width="960" height="465" alt="Снимок экрана 2026-09-27 180000" src="https://github.com/user-attachments/assets/1fc72f42-7579-45be-b70b-27b4a4443924" />
+<img width="960" height="493" alt="Снимок экрана 2026-09-27 180024" src="https://github.com/user-attachments/assets/d1dd245b-cb26-4e0b-9e55-b78221abbfd1" />
 </details>
 
 <details>
 <summary> Blueprint View </summary>
-<img width="793" height="695" alt="Screenshot 2026-09-27 182830" src="https://github.com" />
+<img width="793" height="695" alt="Снимок экрана 2026-09-27 182830" src="https://github.com/user-attachments/assets/eb1b1490-bd90-4bcd-9f67-3121aa30b838" />
 </details>
 
 <details>
 <summary> Login & Registration </summary>
-<img width="350" height="369" alt="Screenshot 2026-09-27 180041" src="https://github.com" />
-<img width="326" height="476" alt="Screenshot 2026-09-27 180055" src="https://github.com" />
+<img width="350" height="369" alt="Снимок экрана 2026-09-27 180041" src="https://github.com/user-attachments/assets/c34513ef-27fb-4bb5-858e-6198f3d52dbf" />
+<img width="326" height="476" alt="Снимок экрана 2026-09-27 180055" src="https://github.com/user-attachments/assets/09ecc109-d119-44c4-b767-a893eccf6d0c" />
+</details>
+
+<details>
+<summary> Profile </summary>
+<img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
 </details>
 
 <details>
 <summary> Add Blueprint Form </summary>
-<img width="930" height="480" alt="Screenshot 2026-09-27 180135" src="https://github.com" />
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
 </details>
 
 ---
 
-## ➡️ Tech Stack
+## Tech Stack
 
 The project is built using the following technologies:
 
@@ -68,7 +73,7 @@ The project is built using the following technologies:
 
 ---
 
-## ➡️ Installation (Local Setup)
+## Installation (Local Setup)
 
 To run this project locally, follow these steps:
 
@@ -101,6 +106,7 @@ Once done, open your browser and navigate to: `http://127.0.0`
 
 
 </details>
+
 
 <details>
 <summary> Rusian </summary>
@@ -154,8 +160,13 @@ Once done, open your browser and navigate to: `http://127.0.0`
 </details>
 
 <details>
-<summary> Форма добавления чертежа</summary>
+<summary> Профиль </summary>
 <img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
+</details>
+
+<details>
+<summary> Загрузка чертежа </summary>
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
 </details>
 
 ---
@@ -204,41 +215,82 @@ python manage.py runserver
 </details>
 
 
-<details>
-<summary> German </summary>
+ <details>
+<summary> Deutsch </summary>
 
 # Factorio Blueprint Hub
 
-**Factorio Blueprint Hub** ist eine Webplattform und eine Community-Bibliothek für Blaupausen (Blueprints) für Factorio-Spieler. Unser Projekt wurde ins Leben gerufen, um die Automatisierung zu vereinfachen und den Erfahrungsaustausch effizienter zu gestalten. Schneller bauen, smarter teilen!
+**Factorio Blueprint Hub** ist eine Webplattform und eine Community-Bibliothek für Baupläne (Blueprints) für Factorio-Spieler. Unser Projekt soll die Automatisierung vereinfachen und den Wissensaustausch effizienter gestalten. Baue schneller, teile cleverer!
 
-Die Plattform ermöglicht es Spielern, ihre Fabriksetups zu veröffentlichen, fertige Lösungen über ein flexibles Tag-System zu finden, die Arbeit anderer zu bewerten und Kommentare zu hinterlassen.
+Die Plattform ermöglicht es Spielern, ihre Konstruktionen zu veröffentlichen, mithilfe eines flexiblen Tagsystems fertige Lösungen zu finden, die Arbeiten anderer Nutzer zu bewerten und Kommentare zu hinterlassen.
 
 ---
 
-## ➡️ Hauptmerkmale (Features)
+## Hauptfunktionen
 
 **Community-Bibliothek**
-* Veröffentlichen eigener Blaupausen mit Screenshots, Tags und dem Blueprint-String.
-* Bequemes Durchsuchen der neuesten Community-Beiträge direkt auf der Startseite.
+* Veröffentliche eigene Baupläne mit Screenshots, Tags und dem Blueprint-String.
+* Durchsuche bequem die neuesten Uploads der Community direkt auf der Startseite.
 
-**Intelligente Suche & Filterung**
-* Schnelle Suche nach Blaupausen über Titel und Beschreibung.
-* Filtern von Beiträgen nach thematischen Tags (z. B. `#eisenbahn`, `#öl`, `#wissenschaft`, `#beton`).
+**Intelligente Suche und Filterung**
+* Schnelle Suche nach Bauplänen anhand von Titel und Beschreibung.
+* Filtere Beiträge mithilfe thematischer Tags (z. B. `#railway`, `#oil`, `#science`, `#concrete`).
 
-**Authentifizierung & Profile**
+**Authentifizierung und Profile**
 * Vollständiges Registrierungs- und Anmeldesystem.
 * Sichere Passwortvalidierung zum Schutz der Benutzerkonten.
-* Persönlicher Bereich zur Verwaltung der eigenen Veröffentlichungen.
+* Persönliches Dashboard zur Verwaltung der veröffentlichten Baupläne.
 
 **Soziale Interaktion**
-* Möglichkeit, favorisierte Blaupausen zu liken.
-* Bewertungs- und Kommentarsystem zur Diskussion und Verbesserung von Setups.
+* Möglichkeit, die Lieblingsbaupläne mit Upvotes oder Likes zu bewerten.
+* Bewertungs- und Kommentarsystem zur Diskussion und Verbesserung von Konstruktionen.
 
 ---
 
-## ➡️ Installation (Lokale Ausführung)
+## Screenshots
 
-Um das Projekt lokal zu starten, führen Sie folgende Schritte aus:
+<details>
+<summary> Startseite und Katalog </summary>
+<img width="960" height="465" alt="Снимок экрана 2026-09-27 180000" src="https://github.com/user-attachments/assets/1fc72f42-7579-45be-b70b-27b4a4443924" />
+<img width="960" height="493" alt="Снимок экрана 2026-09-27 180024" src="https://github.com/user-attachments/assets/d1dd245b-cb26-4e0b-9e55-b78221abbfd1" />
+</details>
+
+<details>
+<summary> Bauplanansicht </summary>
+<img width="793" height="695" alt="Снимок экрана 2026-09-27 182830" src="https://github.com/user-attachments/assets/eb1b1490-bd90-4bcd-9f67-3121aa30b838" />
+</details>
+
+<details>
+<summary> Anmeldung und Registrierung </summary>
+<img width="350" height="369" alt="Снимок экрана 2026-09-27 180041" src="https://github.com/user-attachments/assets/c34513ef-27fb-4bb5-858e-6198f3d52dbf" />
+<img width="326" height="476" alt="Снимок экрана 2026-09-27 180055" src="https://github.com/user-attachments/assets/09ecc109-d119-44c4-b767-a893eccf6d0c" />
+</details>
+
+<details>
+<summary> Profil </summary>
+<img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
+</details>
+
+<details>
+<summary> Formular zum Hinzufügen eines Bauplans </summary>
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
+</details>
+
+---
+
+## Verwendete Technologien
+
+Das Projekt wurde mit folgenden Technologien entwickelt:
+
+* **Backend:** Python / Django / FastAPI
+* **Frontend:** HTML5 / CSS3
+* **Datenbank:** SQLite
+
+---
+
+## Installation (lokale Einrichtung)
+
+Um das Projekt lokal auszuführen, folge diesen Schritten:
 
 ### 1. Repository klonen
 ```bash
@@ -260,13 +312,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Migrationen ausführen und Server starten
+### 4. Migrationen ausführen und den Server starten
 ```bash
 python manage.py migrate
 python manage.py runserver
 ```
-Öffnen Sie danach die lokale Adresse im Browser: `http://127.0.0`
 
+Öffne anschließend deinen Browser und rufe folgende Adresse auf: `http://127.0.0`
 
 </details>
 
+</details>
