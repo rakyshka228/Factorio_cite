@@ -109,7 +109,7 @@ Once done, open your browser and navigate to: `http://127.0.0`
 
 
 <details>
-<summary> Rusian </summary>
+<summary> Rusian/Русский </summary>
 
 #  Factorio Blueprint Hub
 
@@ -216,7 +216,7 @@ python manage.py runserver
 
 
  <details>
-<summary> Deutsch </summary>
+<summary> German/Deutsch </summary>
 
 # Factorio Blueprint Hub
 
@@ -321,5 +321,217 @@ python manage.py runserver
 Öffne anschließend deinen Browser und rufe folgende Adresse auf: `http://127.0.0`
 
 </details>
+
+<details>
+<summary> French/Français </summary>
+
+# Factorio Blueprint Hub
+
+**Factorio Blueprint Hub** est une plateforme web et une bibliothèque communautaire de plans de construction (*blueprints*) destinée aux joueurs de Factorio. Notre projet a été conçu pour simplifier l’automatisation et rendre le partage des connaissances plus efficace. Construisez plus vite, partagez plus intelligemment !
+
+La plateforme permet aux joueurs de publier leurs configurations, de trouver des solutions prêtes à l’emploi grâce à un système flexible de tags, d’évaluer les créations d’autres utilisateurs et de laisser des commentaires.
+
+---
+
+## Fonctionnalités principales
+
+**Bibliothèque communautaire**
+* Publiez vos propres plans avec des captures d’écran, des tags et le code du blueprint.
+* Consultez facilement les dernières publications de la communauté directement sur la page d’accueil.
+
+**Recherche et filtrage intelligents**
+* Recherchez rapidement des plans par titre et par description.
+* Filtrez les publications à l’aide de tags thématiques (par exemple : `#chemin_de_fer`, `#pétrole`, `#science`, `#béton`).
+
+**Authentification et profils**
+* Système complet d’inscription et de connexion.
+* Validation sécurisée des mots de passe pour protéger les comptes des utilisateurs.
+* Tableau de bord personnel pour gérer vos propres publications.
+
+**Interactions sociales**
+* Possibilité d’aimer les plans préférés.
+* Système d’avis et de commentaires permettant de discuter des configurations et de les améliorer.
+
+---
+
+## Captures d’écran de l’interface
+
+<details>
+<summary> Page d’accueil et catalogue </summary>
+<img width="960" height="465" alt="Снимок экрана 2026-09-27 180000" src="https://github.com/user-attachments/assets/1fc72f42-7579-45be-b70b-27b4a4443924" />
+<img width="960" height="493" alt="Снимок экрана 2026-09-27 180024" src="https://github.com/user-attachments/assets/d1dd245b-cb26-4e0b-9e55-b78221abbfd1" />
+</details>
+
+<details>
+<summary> Consultation d’un plan </summary>
+<img width="793" height="695" alt="Снимок экрана 2026-09-27 182830" src="https://github.com/user-attachments/assets/eb1b1490-bd90-4bcd-9f67-3121aa30b838" />
+</details>
+
+<details>
+<summary> Connexion et inscription </summary>
+<img width="350" height="369" alt="Снимок экрана 2026-09-27 180041" src="https://github.com/user-attachments/assets/c34513ef-27fb-4bb5-858e-6198f3d52dbf" />
+<img width="326" height="476" alt="Снимок экрана 2026-09-27 180055" src="https://github.com/user-attachments/assets/09ecc109-d119-44c4-b767-a893eccf6d0c" />
+</details>
+
+<details>
+<summary> Profil </summary>
+<img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
+</details>
+
+<details>
+<summary> Formulaire d’ajout d’un plan </summary>
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
+</details>
+
+---
+
+## Technologies utilisées
+
+Le projet a été développé à l’aide des technologies suivantes :
+
+* **Backend :** Python / Django / FastAPI
+* **Frontend :** HTML5 / CSS3
+* **Base de données :** SQLite
+
+---
+
+## Installation (configuration locale)
+
+Pour exécuter ce projet localement, suivez les étapes suivantes :
+
+### 1. Cloner le dépôt
+```bash
+git clone https://github.com
+cd factorio-blueprint-hub
+```
+
+### 2. Configurer un environnement virtuel (pour Python/Django)
+```bash
+python -m venv venv
+# Pour Windows :
+venv\Scripts\activate
+# Pour Linux/macOS :
+source venv/bin/activate
+```
+
+### 3. Installer les dépendances
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Exécuter les migrations et démarrer le serveur
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Une fois ces étapes terminées, ouvrez votre navigateur et accédez à l’adresse locale suivante : `http://127.0.0`
+
+</details>
+
+<details>
+<summary> Polski </summary>
+
+# Factorio Blueprint Hub
+
+**Factorio Blueprint Hub** to platforma internetowa i biblioteka społecznościowa projektów (*blueprintów*) przeznaczona dla graczy Factorio. Nasz projekt powstał, aby uprościć automatyzację i usprawnić wymianę wiedzy. Buduj szybciej, dziel się mądrzej!
+
+Platforma umożliwia graczom publikowanie własnych projektów, wyszukiwanie gotowych rozwiązań za pomocą elastycznego systemu tagów, ocenianie prac innych użytkowników oraz dodawanie komentarzy.
+
+---
+
+## Główne funkcje
+
+**Biblioteka społecznościowa**
+* Publikowanie własnych projektów wraz ze zrzutami ekranu, tagami i kodem blueprintu.
+* Wygodne przeglądanie najnowszych publikacji społeczności bezpośrednio na stronie głównej.
+
+**Inteligentne wyszukiwanie i filtrowanie**
+* Szybkie wyszukiwanie projektów według tytułu i opisu.
+* Filtrowanie publikacji za pomocą tagów tematycznych (np. `#kolej`, `#ropa`, `#nauka`, `#beton`).
+
+**Uwierzytelnianie i profile**
+* Pełny system rejestracji i logowania.
+* Bezpieczna walidacja haseł w celu ochrony kont użytkowników.
+* Osobisty panel do zarządzania własnymi publikacjami.
+
+**Interakcje społeczne**
+* Możliwość polubienia ulubionych projektów.
+* System opinii i komentarzy umożliwiający omawianie oraz ulepszanie projektów.
+
+---
+
+## Zrzuty ekranu interfejsu
+
+<details>
+<summary> Strona główna i katalog </summary>
+<img width="960" height="465" alt="Снимок экрана 2026-09-27 180000" src="https://github.com/user-attachments/assets/1fc72f42-7579-45be-b70b-27b4a4443924" />
+<img width="960" height="493" alt="Снимок экрана 2026-09-27 180024" src="https://github.com/user-attachments/assets/d1dd245b-cb26-4e0b-9e55-b78221abbfd1" />
+</details>
+
+<details>
+<summary> Widok projektu </summary>
+<img width="793" height="695" alt="Снимок экрана 2026-09-27 182830" src="https://github.com/user-attachments/assets/eb1b1490-bd90-4bcd-9f67-3121aa30b838" />
+</details>
+
+<details>
+<summary> Logowanie i rejestracja </summary>
+<img width="350" height="369" alt="Снимок экрана 2026-09-27 180041" src="https://github.com/user-attachments/assets/c34513ef-27fb-4bb5-858e-6198f3d52dbf" />
+<img width="326" height="476" alt="Снимок экрана 2026-09-27 180055" src="https://github.com/user-attachments/assets/09ecc109-d119-44c4-b767-a893eccf6d0c" />
+</details>
+
+<details>
+<summary> Profil </summary>
+<img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
+</details>
+
+<details>
+<summary> Formularz dodawania projektu </summary>
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
+</details>
+
+---
+
+## Wykorzystane technologie
+
+Projekt został opracowany z wykorzystaniem następujących technologii:
+
+* **Backend:** Python / Django / FastAPI
+* **Frontend:** HTML5 / CSS3
+* **Baza danych:** SQLite
+
+---
+
+## Instalacja (konfiguracja lokalna)
+
+Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
+
+### 1. Sklonuj repozytorium
+```bash
+git clone https://github.com
+cd factorio-blueprint-hub
+```
+
+### 2. Skonfiguruj środowisko wirtualne (dla Python/Django)
+```bash
+python -m venv venv
+# Dla systemu Windows:
+venv\Scripts\activate
+# Dla systemów Linux/macOS:
+source venv/bin/activate
+```
+
+### 3. Zainstaluj zależności
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Wykonaj migracje i uruchom serwer
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Po wykonaniu tych kroków otwórz przeglądarkę i przejdź pod lokalny adres: `http://127.0.0`
 
 </details>
