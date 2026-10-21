@@ -107,6 +107,112 @@ Once done, open your browser and navigate to: `http://127.0.0`
 
 </details>
 
+<details>
+<summary> Ukrainian/Українська </summary>
+
+# Factorio Blueprint Hub
+
+**Factorio Blueprint Hub** — це вебплатформа та спільнотна бібліотека креслень (*blueprints*) для гравців Factorio. Наш проєкт створений для того, щоб спростити автоматизацію та зробити обмін знаннями ефективнішим. Будуйте швидше, діліться розумніше!
+
+Платформа дозволяє гравцям публікувати власні схеми, знаходити готові рішення за допомогою гнучкої системи тегів, оцінювати роботи інших користувачів і залишати коментарі.
+
+---
+
+## Основні можливості
+
+**Спільнотна бібліотека**
+* Публікація власних креслень зі скриншотами, тегами та рядком коду креслення (*blueprint string*).
+* Зручний перегляд найновіших публікацій спільноти безпосередньо на головній сторінці.
+
+**Розумний пошук і фільтрація**
+* Швидкий пошук креслень за назвою та описом.
+* Фільтрація публікацій за тематичними тегами (наприклад: `#залізниця`, `#нафта`, `#наука`, `#бетон`).
+
+**Авторизація та профілі**
+* Повноцінна система реєстрації та входу в обліковий запис.
+* Безпечна перевірка паролів для захисту облікових записів користувачів.
+* Особистий кабінет для керування власними публікаціями.
+
+**Соціальна взаємодія**
+* Можливість ставити вподобайки улюбленим кресленням.
+* Система відгуків і коментарів для обговорення та вдосконалення схем.
+
+---
+
+## Скріншоти інтерфейсу
+
+<details>
+<summary> Головна сторінка та каталог </summary>
+<img width="960" height="465" alt="Снимок экрана 2026-09-27 180000" src="https://github.com/user-attachments/assets/1fc72f42-7579-45be-b70b-27b4a4443924" />
+<img width="960" height="493" alt="Снимок экрана 2026-09-27 180024" src="https://github.com/user-attachments/assets/d1dd245b-cb26-4e0b-9e55-b78221abbfd1" />
+</details>
+
+<details>
+<summary> Перегляд креслення </summary>
+<img width="793" height="695" alt="Снимок экрана 2026-09-27 182830" src="https://github.com/user-attachments/assets/eb1b1490-bd90-4bcd-9f67-3121aa30b838" />
+</details>
+
+<details>
+<summary> Вхід і реєстрація </summary>
+<img width="350" height="369" alt="Снимок экрана 2026-09-27 180041" src="https://github.com/user-attachments/assets/c34513ef-27fb-4bb5-858e-6198f3d52dbf" />
+<img width="326" height="476" alt="Снимок экрана 2026-09-27 180055" src="https://github.com/user-attachments/assets/09ecc109-d119-44c4-b767-a893eccf6d0c" />
+</details>
+
+<details>
+<summary> Профіль </summary>
+<img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
+</details>
+
+<details>
+<summary> Форма додавання креслення </summary>
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
+</details>
+
+---
+
+## Використані технології
+
+Проєкт розроблено з використанням таких технологій:
+
+* **Backend:** Python / Django / FastAPI
+* **Frontend:** HTML5 / CSS3
+* **База даних:** SQLite
+
+---
+
+## Встановлення (локальне налаштування)
+
+Щоб запустити проєкт локально, виконайте такі кроки:
+
+### 1. Клонуйте репозиторій
+```bash
+git clone https://github.com
+cd factorio-blueprint-hub
+```
+
+### 2. Налаштуйте віртуальне середовище (для Python/Django)
+```bash
+python -m venv venv
+# Для Windows:
+venv\Scripts\activate
+# Для Linux/macOS:
+source venv/bin/activate
+```
+
+### 3. Встановіть залежності
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Виконайте міграції та запустіть сервер
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Після цього відкрийте браузер і перейдіть за локальною адресою: `http://127.0.0`
+
+</details>
 
 <details>
 <summary> Rusian/Русский </summary>
@@ -430,7 +536,7 @@ Une fois ces étapes terminées, ouvrez votre navigateur et accédez à l’adre
 </details>
 
 <details>
-<summary> Polski </summary>
+<summary> Polish/Polski </summary>
 
 # Factorio Blueprint Hub
 
