@@ -641,3 +641,110 @@ python manage.py runserver
 Po wykonaniu tych kroków otwórz przeglądarkę i przejdź pod lokalny adres: `http://127.0.0`
 
 </details>
+
+<details>
+<summary> Spanish/Español </summary>
+
+# Factorio Blueprint Hub
+
+**Factorio Blueprint Hub** es una plataforma web y una biblioteca comunitaria de planos (*blueprints*) para los jugadores de Factorio. Nuestro proyecto está diseñado para simplificar la automatización y hacer que el intercambio de conocimientos sea más eficiente. ¡Construye más rápido, comparte de forma más inteligente!
+
+La plataforma permite a los jugadores publicar sus diseños, encontrar soluciones listas para usar mediante un sistema flexible de etiquetas, valorar los trabajos de otros usuarios y dejar comentarios.
+
+---
+
+## Funcionalidades principales
+
+**Biblioteca comunitaria**
+* Publica tus propios planos con capturas de pantalla, etiquetas y el código del blueprint.
+* Explora fácilmente las publicaciones más recientes de la comunidad directamente desde la página principal.
+
+**Búsqueda y filtrado inteligentes**
+* Búsqueda rápida de planos por título y descripción.
+* Filtrado de publicaciones mediante etiquetas temáticas (por ejemplo: `#ferrocarril`, `#petróleo`, `#ciencia`, `#hormigón`).
+
+**Autenticación y perfiles**
+* Sistema completo de registro e inicio de sesión.
+* Validación segura de contraseñas para proteger las cuentas de los usuarios.
+* Panel personal para gestionar tus propias publicaciones.
+
+**Interacción social**
+* Posibilidad de dar «Me gusta» a tus planos favoritos.
+* Sistema de reseñas y comentarios para debatir y mejorar los diseños.
+
+---
+
+## Capturas de pantalla de la interfaz
+
+<details>
+<summary> Página principal y catálogo </summary>
+<img width="960" height="465" alt="Снимок экрана 2026-09-27 180000" src="https://github.com/user-attachments/assets/1fc72f42-7579-45be-b70b-27b4a4443924" />
+<img width="960" height="493" alt="Снимок экрана 2026-09-27 180024" src="https://github.com/user-attachments/assets/d1dd245b-cb26-4e0b-9e55-b78221abbfd1" />
+</details>
+
+<details>
+<summary> Vista del plano </summary>
+<img width="793" height="695" alt="Снимок экрана 2026-09-27 182830" src="https://github.com/user-attachments/assets/eb1b1490-bd90-4bcd-9f67-3121aa30b838" />
+</details>
+
+<details>
+<summary> Inicio de sesión y registro </summary>
+<img width="350" height="369" alt="Снимок экрана 2026-09-27 180041" src="https://github.com/user-attachments/assets/c34513ef-27fb-4bb5-858e-6198f3d52dbf" />
+<img width="326" height="476" alt="Снимок экрана 2026-09-27 180055" src="https://github.com/user-attachments/assets/09ecc109-d119-44c4-b767-a893eccf6d0c" />
+</details>
+
+<details>
+<summary> Perfil </summary>
+<img width="930" height="480" alt="Снимок экрана 2026-09-27 180135" src="https://github.com/user-attachments/assets/c9c9bcc9-29e2-4f90-84e2-ce841dfa17dd" />
+</details>
+
+<details>
+<summary> Formulario para añadir un plano </summary>
+<img width="484" height="650" alt="Снимок экрана 2026-10-21 155046" src="https://github.com/user-attachments/assets/eeb48d42-6c3c-408e-b3ff-25b6f8b2f8c3" />
+</details>
+
+---
+
+## Tecnologías utilizadas
+
+El proyecto se ha desarrollado utilizando las siguientes tecnologías:
+
+* **Backend:** Python / Django / FastAPI
+* **Frontend:** HTML5 / CSS3
+* **Base de datos:** SQLite
+
+---
+
+## Instalación (configuración local)
+
+Para ejecutar el proyecto localmente, sigue estos pasos:
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com
+cd factorio-blueprint-hub
+```
+
+### 2. Configurar un entorno virtual (para Python/Django)
+```bash
+python -m venv venv
+# Para Windows:
+venv\Scripts\activate
+# Para Linux/macOS:
+source venv/bin/activate
+```
+
+### 3. Instalar las dependencias
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Ejecutar las migraciones e iniciar el servidor
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Una vez completados estos pasos, abre el navegador y accede a la siguiente dirección local: `http://127.0.0`
+
+</details>
